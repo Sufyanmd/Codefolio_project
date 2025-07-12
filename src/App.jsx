@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from './assets/comonents/Logo'
+import Logo from './assets/components/Logo'
 
 const App = () => {
   return (
