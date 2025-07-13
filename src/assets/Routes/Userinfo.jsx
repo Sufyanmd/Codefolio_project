@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import Repo from '../components/Repo'
-
+const headers = {
+  Authorization: `token ${import.meta.env.VITE_GITHUB_TOKEN}`,
+};
 const Userinfo = () => {
     const[user, setUser] = useState([])
     const[type, setType] = useState("repos")
@@ -10,7 +12,7 @@ const Userinfo = () => {
     let BaseURL = "https://api.github.com/users"
 
     async function GetUserInfo() {
-        const res = await fetch(BaseURL + pathname)
+        const res = await fetch(BaseURL + pathname, { headers })
         const data = await res.json()
         setUser(()=>[data])
     }
@@ -41,7 +43,8 @@ const Userinfo = () => {
         ))
       }
       <div className='flex border-b pb-4 gap-6 mt-[10%] mb-6 justify-center md:text-xl w-screen' >
-        <button className={`${type==='repos' && 'text-pink-600' }`}  onClick={()=>setType("repos")}   type={type} setType={setType}>Repositories</button>
+        <button className={`${type==='repos' && 'text-pink-600' }`}  onClick={()=>setType("repos")}   type={type} setType={setType}>
+        </button>
         
         {type==="repos" && (
           <div> 

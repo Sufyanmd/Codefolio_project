@@ -1,6 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import UsersContainer from '../components/UsersContainer';
 import Loading from '../components/Loading';
+const headers = {
+  Authorization: `token ${import.meta.env.VITE_GITHUB_TOKEN}`,
+};
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -8,6 +11,7 @@ const Users = () => {
   const BaseURL = "https://api.github.com/users";
   const user = useRef('');
 
+  
   async function FindUser() {
     const input = user.current.value.trim(); 
     setLoading(true);
@@ -16,9 +20,9 @@ const Users = () => {
       let res;
 
       if (input === "") {
-        res = await fetch(`${BaseURL}?since=55`);
+        res = await fetch(`${BaseURL}?since=55`, {headers});
       } else {
-        res = await fetch(`${BaseURL}/${input}`);
+        res = await fetch(`${BaseURL}/${input}`, {headers});
       }
 
       if (res.status === 403) {
@@ -59,8 +63,8 @@ const Users = () => {
   }, []);
 
   return (
-    <div>
-      <div className='flex justify-center items-center h-11 my-5'>
+    <div >
+      <div className='flex justify-center items-center h-11 my-5 w-screen '>
         <input
           type="text"
           placeholder='search github user name'
@@ -98,7 +102,9 @@ const Users = () => {
         </button>
       </div>
 
-      {loading ? <Loading /> : <UsersContainer users={users} />}
+        <div className='flex justify-center px-8 w-screen'>
+            {loading ? <Loading /> : <UsersContainer users={users} />}
+        </div>
     </div>
   );
 }
