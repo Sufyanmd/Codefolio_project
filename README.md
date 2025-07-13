@@ -4,7 +4,7 @@ Welcome to **Codefolio**, a React-based web app that lets you **search GitHub us
 
 ![Home page img](https://github.com/Sufyanmd/Codefolio_project/blob/main/src/assets/Images/CodefolioImg/HomeScreen.png?raw=true)
 
-## Website URL
+## Website URL : ![url](https://codefolio-git-main-sufyanmds-projects.vercel.app/)
 
 ## Problem Statement
 GitHub is great for hosting code, but not for visually exploring developer profiles.
@@ -12,7 +12,9 @@ It’s hard to quickly search, view, or showcase someone’s GitHub in a clean, 
 
 Codefolio solves this by turning GitHub data into a simple, searchable, portfolio-like interface, perfect for recruiters, learners, and developers.
 
-![Ideation page img]()
+![Ideation page img](https://github.com/Sufyanmd/Codefolio_project/blob/main/src/assets/Images/CodefolioImg/IdeationPic.png?raw=true)
+
+## View : ![eraser url](https://app.eraser.io/workspace/9M4joSId3rSRi9NMtp6T?origin=share)
 
 ##  Features
 
@@ -23,14 +25,14 @@ Codefolio solves this by turning GitHub data into a simple, searchable, portfoli
 - Handles empty states, loading, and 404 errors
 - Almost Responsive and elegant UI built with Tailwind CSS
 
-![userinfo page img]()
-![Reps page img]()
+![userinfo page img](https://github.com/Sufyanmd/Codefolio_project/blob/main/src/assets/Images/CodefolioImg/UserInfo.png?raw=true)
+![Reps page img](https://github.com/Sufyanmd/Codefolio_project/blob/main/src/assets/Images/CodefolioImg/RepoPic.png?raw=true)
 
 
 
 ## Project Structure
 
-![project structure img]()
+![project structure img](https://github.com/Sufyanmd/Codefolio_project/blob/main/src/assets/Images/CodefolioImg/FolderStructure.png?raw=true)
 
 ### Project Setup
 
