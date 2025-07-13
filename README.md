@@ -2,7 +2,7 @@
 
 Welcome to **Codefolio**, a React-based web app that lets you **search GitHub users**, view their **profile details**, and browse through their **public repositories** 
 
-![Home page img]()
+![Home page img](https://github.com/Sufyanmd/Codefolio_project/blob/main/src/assets/Images/CodefolioImg/HomeScreen.png?raw=true)
 
 ## Website URL
 
